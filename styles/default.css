@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+h1 {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+nav {
+    margin-top: 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    border: 3px solid gray;
+}
+
+nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+nav ul li {
+    background: #cc624c;
+    border: 3px solid gray;
+    display: inline-block;
+    float: left;
+    flex: 1 0 auto;
+    text-align: center;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 5px;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:first-child {
+    padding-top: 10px;
+}
+
+nav ul li a:last-child {
+    padding-bottom: 10px;
+}
+
+nav ul li a:hover {
+    color: white;
+    background: orange;
+}
+
+nav ul li:hover {
+    z-index: 2;
+    transform: scale(1.5);
+}
+
+article {
+    padding: 50px;
+}
+
+article h2 {
+    border-radius: 3px;
+}
+
+article header {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 20px;
+}
+
+article section {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 20px;
+    margin: 50px 0 0 0;
+}
+
+footer {
+    margin: 0 50px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+}
+
+footer p {
+    margin: 0;
+}
